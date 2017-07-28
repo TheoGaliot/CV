@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  background-image: url(http://adsys.net.au/wp-content/themes/fayetheme/Images/bannerService.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  /*bottom: 0;*/
+  left: 0;
+  background: rgba(40, 40, 45, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+h1 {
+  width: 100%;
+  margin: 40vh 0 3vh 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100px;
+  font-size: 3em;
+}
+
+#titre {
+  margin-left: -70px;
+}
+i {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  margin-left: -75px;
+}
+
+
+.github, .linkedin, .mastodon {
+  display: inline-block;
+  background: #06c;
+  color: #ddd;
+  text-decoration: none;
+  padding-top: 11px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 20%;
+  box-sizing: border-box;
+  margin-left: -50px;
+  box-shadow: 0 -50px 0 0 rgba(0, 0, 0, 0) inset;
+  transition: all 0.4s;
+  margin-right: 70px;
+}
+
+.fa-github, .fa-linkedin, .fa-mastodon{
+  height:30px;
+  margin-top:-5px;
+  margin-right: 0px;
+}
+
+.github:hover, .linkedin:hover , .mastodon:hover{
+  color: #fff;
+  box-shadow: 0 -50px 0 0 rgba(0, 0, 0, 0.5) inset;
+  cursor: pointer;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-down {
+  position: absolute;
+
+  bottom: 15px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+nav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #06c;
+  color:white ;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav div:hover {
+  background-color: #6495ED;
+  cursor: pointer;
+}
+
+
+nav div {
+  font-size: 15px;
+  padding: 5px;
+  text-align: center;
+  flex: 1 1 auto;
+
+}
+
+.bannieresep {
+/*  background-image: url(https://celineli.github.io/assets/images/bg2.jpg); */
+  height: 100px;
+  width: 100%;
+  margin-top: 200px;
+  border-bottom: 2px solid #ADD8E6;
+
+}
+
+
+#section_intro h1 {
+  margin-top: -10%;
+  color: black;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Quicksand', sans-serif;
+
+
+}
+
+#section_intro {
+  margin-top: 30%;
+}
+
+#section_competence h1 {
+  color: black;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 350px;
+
+}
+
+.post_thumb img {
+  margin-top: -3%;
+  margin-right: -20%;
+}
+
+.post_text {
+  padding-top: 75px;
+}
+
+a {
+  color: white;
+}
+
+
+section > header > h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: black;
+}
+
+#bootstrap img {
+  height: 175px;
+}
+
+@media (max-width:640px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background-size: 500%;
+  }
+
+  nav div{
+    font-size: 12px;
+    padding: 5px;
+    margin-left: -1%;
+    flex: 1 1 auto;
+  }
+
+  #titre {
+  margin-left: -40px;
+  }
+
+  i {
+    font-size: 15px;
+  }
+
+  .github, .linkedin, .mastodon {
+    margin-left: -25px;
+  }
+
+  .scroll-down {
+    height: 38px;
+    width: 38px;
+    padding-top: -35px;
+}
+
+  .post_thumb img {
+    height: 200px;
+    margin-top: 100px;
+    float: left;
+    padding-left: 1%;
+  }
+
+  .post_text p {
+    font-size: 10px;
+    width: 60%;
+    margin-top: -59%;
+    margin-left: 37%;
+
+  }
+
+.bannieresep {
+  border-bottom: 2px solid #ADD8E6;
+
+}
+
+
+  #section_intro h1 {
+    margin-top: -75%;
+    float: left;
+    font-size: 20px;
+  }
+
+#section_competence h1 {
+  margin-top: -75%;
+  font-size: 20px;
+  color: black;
+}
+
+}

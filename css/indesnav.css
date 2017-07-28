@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.container-fluid {
+  padding: 0;
+  top: 0;
+}
+
+.separateur {
+  height: 3px;
+  width: 15%;
+  border: none;
+  box-shadow: none;
+  background-color: #3498DB;
+
+}
+/*header */
+.navbar-brand img {
+  position: absolute;
+  z-index: 2;
+  height: 75px;
+  margin-top: -2%;
+  margin-left: -1%;
+}
+/*banniière */
+.banner {
+width: 100%;
+max-width: 100%;
+}
+
+header {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.inner-banner {
+  width: 100%;
+  text-align: center;
+}
+
+.inner-banner h1 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: -1px 1px 2px black;
+  padding-top: 200px;
+
+}
+
+.inner-banner h2 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: -1px 1px 2px black;
+  padding-top: 50px;
+
+}
+
+.section {
+  position: relative;
+  width: 900px;
+  max-width: 80%;
+  border: 2px solid #333;
+  border-top: none;
+  text-align: center;
+  margin: 60px auto;
+}
+
+.section h1 {
+  position: relative;
+  margin-top: -14px;
+  display: inline-block;
+  letter-spacing: 4px;
+}
+
+.top-border{
+  position: absolute;
+  height: 2px;
+  width: 24%;
+  background-color: #333;
+}
+
+.right {
+  right: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  border-image: -1px 1px 2px black;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+/*contenu */
+
+#photo {
+border-color: white /* for an acceptable IE result*/;
+border-width: 15px;
+-moz-border-image: url(http://tobias-reinhardt.de/img/frame.png) 15 stretch;
+border-image: url(http://tobias-reinhardt.de/img/frame.png) 15 stretch;
+border-style: solid;
+-moz-transform:rotate(-5deg);
+
+height: 300px;
+}
+
+.row h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+dd {
+  margin-bottom: 20px;
+}
+
+dt p {
+  padding-top: 5px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.box-white {
+  background-color: #FFF8DC;
+  padding: 2px 10px 10px 10px;
+  margin-bottom: 5px;
+  border-bottom: 3px solid #C1CBDB;
+  padding-top: 50px; /* je me suis arrete là */
+}
+
+.box-white img {
+  height: 150px;
+  padding: 15px;
+}
+
+#html, #css {
+  height: 180px;
+  margin-bottom: 2%;
+}
+
+.col-sm-4 img {
+  width: 80%;
+  height: 255px;
+}
+
+
+@media (max-width: 685px) {
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar-brand img{
+  margin-top: -5%;
+  margin-left: -4%;
+  height: 60px;
+}
+
+.inner-banner h1 {
+  margin-top: -50%;
+}
+
+.inner-banner h2 {
+  margin-top: 5%;
+}
+
+.top-border {
+  width: 18%;
+	}
+}
+
+.section p {
+  width: 61%;
+  margin: 20px auto 40px auto;
+  line-height: 30px;
+}
+
+.section a {
+  outline: 0;
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 40px;
+  width: 440px;
+  max-width: 80%;
+  background-color: #333;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 3px;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+}
+
+.section a:hover {
+  background-color: #1D222D;
+}
+
+
+@media (max-width: 500px) {
+  .top-border {
+    display: none;
+  }
+  .section {
+  border-top: 2px solid #333;
+  }
+  .section h1 {
+    margin: 20px 6px;
+  }
+}
+
+#section_passion {
+  overflow: hidden; }
+  #section_passion article {
+    padding: 0; }
+  #section_passion .football {
+    background: url("../img/foot.jpg"); }
+  #section_passion .jeux {
+    background: url("../img/xbox.jpg"); }
+  #section_passion .musique {
+    background: url("../img/musique2.jpg"); }
+  #section_passion .interet {
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Righteous", cursive;
+    padding: 0;
+    font-size: 35px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px; }
+    #section_passion .interet p {
+      position: relative;
+      top: calc(50% - 18px);
+      margin: auto; }
+  #section_passion .coverinteret {
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    transition: 0.4s; }
+    #section_passion .coverinteret:hover {
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff; }
