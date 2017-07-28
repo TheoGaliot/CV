@@ -210,6 +210,10 @@ dt p {
   height: 255px;
 }
 
+.coverinteret p {
+  font-family: 'Cinzel', serif;
+  font-size: 50px;
+  }
 
 @media (max-width: 685px) {
 
