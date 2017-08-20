@@ -7,68 +7,182 @@
   <title> Mon CV en ligne </title>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="vendor/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
-  <link href="css/indes.css" rel="stylesheet"/>
+  <link href="css/indesnav2.css" rel="stylesheet"/>
+  <link rel="icon" href="img/favicon5.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
 
 </head>
 
 <body>
   <!-- header!-->
   <header class="container-fluid header">
-    <div class="container">
-      <nav class="menu">
-        <a href="#about"> A propos </a>
-        <a href="#competence"> Mes compétences </a>
-        <a href="#parcours"> Mon parcours </a>
-        <a href="#passion"> Mes passions </a>
-  </nav>
-</div>
-  </header>
-<!-- end header !-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
 
-<!--bannière!-->
-<section class="container-fluid banner">
-  <div class="ban">
-    <img src="img/bg.jpg" alt="bannière du site"/>
-  </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bar-nav-principale" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </button>
+          <a class="navbar-brand"><img src="img/logot.png"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bar-nav-principale">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about"> À propos </a></li>
+            <li><a href="#parcours"> Mon parcours </a></li>
+            <li><a href="#competences"> Mes compétences </a></li>
+            <li><a href="#passion"> Mes passions </a></li>
+            <li><a href="#realisations"> Mes réalisations </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <div class="inner-banner">
       <h1> Théo Galiot </h1>
+      <h2> Développeur Web et Mobile </h2>
     </div>
-</section>
-<!-- end bannière !-->
+    <section>
+      <a href="#" class="scroll-down" alt="descendre"></a>
+    </section>
+  </header>
+  <!-- end header !-->
+
 
   <!-- à propos!-->
   <section class="container-fluid about">
     <div class="container">
       <div class="row">
-        <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
-          <h2> <a name="about"> A propos </a></h2>
-          <hr class="separateur">
+        <article id="propos" class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+          <h2 id="apropos"> <a name="about"> A propos </a></h2>
+          <p> Je m'appelle Théo Galiot. Originaire de la région Nord Pas-de-Calais, je suis né à Arras le 16 Juillet 1997. Depuis mon plus jeune âge, j'éprouve un intérêt certain pour l'informatique. Suite à diverses expériences, j'ai voulu poursuivre l'aventure à PopSchool Lens où j'ai appris pour la première fois à développer des sites Internet ainsi que des applications pour web et mobiles. J'ai pour intérêt d'exposer et pousser plus loin encore ma créativité; le domaine de l'informatique étant le l'endroit idéal pour approfondir et élargir mes compétences.</p>
+        </article>
+        <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12 text-center">
+          <h2> </h2>
+          <img id="photo" src="img/moi2.jpg" alt="Photo de moi"/>
         </article>
         <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
-          <h2> Mon parcours </h2>
+          <h2 id="parcours"> <a name="parcours">Mon parcours </a> </h2>
+          <dl>
+            <dt> - Juin → Décembre 2017 : <p>Formation Pop School Lens Développeur Web/Mobile</p></dt>
+            <dd></dd>
+            <dt> - Janvier 2017 : <p>Aménageur d'intérieur SNCF La Madeleine</p></dt>
+            <dd></dd>
+            <dt> - Novembre 2016 : <p>La Poste Zone Artois Pole Saint-Laurent Blangy</p></dt>
+            <dd></dd>
+            <dt> -  Septembre → Octobre 2016 : <p id="travail"> Travail à la chaine usine Chateaux Blanc et Vandemorteele</p></dt>
+          </dl>
         </article>
       </div>
     </div>
-</section>
-<!-- end à propos !-->
+  </section>
+  <!-- end à propos !-->
 
+  <!-- mes compétences !-->
+  <div class="container-fluid text-center">
+    <div class="container-competences">
+      <div class="row">
+        <article class="col-md-12">
+          <div class="box-purple">
+            <h2><a name="competences"> Mes compétences </a></h2>
+            <img id="html" src="img/html2.png" alt="logo HTML">
+            <img id="css" src="img/css32.png" alt="CSS logo">
+            <img src="img/boostra.png" alt="Bootstrap logo">
+            <img src="img/wordpress.png" alt="Wordpress logo">
+            <img src="img/prestashop.png" alt="Prestashop logo">
+            <img src="img/drupal.png" alt="Drupal logo">
+        </article>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- fin mes compétences !-->
 
+<!-- mes passions !-->
+<section id="section_passion">
+<article class="container-fluid" id="container-interet">
+				<div class="row">
+          <h2><a name="passion"> Mes passions </a></h2>
+					<div class="interet football col-sm-4">
+						<div class="coverinteret">
+							<p class="text-center">Football</p>
+						</div>
+					</div>
+					<div class="interet jeux col-sm-4">
+						<div class="coverinteret">
+							<p class="text-center">Jeux-Video</p>
+						</div>
+					</div>
+					<div class="interet musique col-sm-4">
+						<div class="coverinteret">
+							<p class="text-center">Musique</p>
+						</div>
+					</div>
+				</div>
+			</article>
+    </section>
+<!-- fin mes passions !-->
 
-<!-- footer contact !-->
-<footer class="container-fluid footer">
-  <div class="section">
-  <div class="top-border left"></div>
-  <div class="top-border right"></div>
-  <h1>Contactez-moi</h1>
-  <p>Voici mon adresse mail pour que vous puissez me contacter</p>
-    <a href="#">batistheo@hotmail.fr</a>
+<!-- Mes réalisations !-->
+<div class="container-fluid text-center">
+  <div class="container-competences">
+    <div class="row">
+      <article class="col-md-12">
+        <div class="box-purple2">
+          <h2><a name="realisations"> Mes réalisations </a></h2>
+            <img src="https://lipstreet.files.wordpress.com/2014/09/d3hd34u.png" alt="image coming soon">
+            <img src="https://lipstreet.files.wordpress.com/2014/09/d3hd34u.png" alt="image coming soon">
+            <img src="https://lipstreet.files.wordpress.com/2014/09/d3hd34u.png" alt="image coming soon">
+      </article>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin de mes réalisations !-->
+
+  <!-- formulaire contact !-->
+  <div class="container-fluid text-center">
+    <div class="section">
+      <div class="top-border left"></div>
+      <div class="top-border right"></div>
+      <h1>Contactez-moi</h1>
+      <p>Voici mon adresse mail pour que vous puissez me contacter </p>
+      <a id="email">galiotheo@hotmail.com</a>
+      <p> Vous retrouverez mes réseaux sociaux en <strong>bas de page</strong><br>
+      Pour y avoir accès cliquez sur <strong>les icones </strong></p>
+    </div>
+  </div>
+<!-- fin formulaire contact !-->
+
+<!-- footer !-->
+<footer class="footer-area">
+<div class="container-fluid text-center">
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="social-link">
+  <a href="https://github.com/TheoGaliot" target="_blank">
+    <img id="github" src="img/github.png" alt="github"></img>
+  </a>
+  <a href="https://www.linkedin.com/in/th%C3%A9o-galiot-b62880146/" target="_blank">
+    <img id="linkedin" src="img/linkedin.png" alt="linkedin"></img>
+  </a>
+  <a href="https://mastodon.cusae.com/web/accounts/4224" target="_blank">
+    <img id="mastodon" src="img/mastodon.png" alt="mastodon"></img>
+  </a>
+</div>
+</div>
 </div>
 </footer>
-
+<!-- fin footer !-->
 </body>
 
-  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scroll.js"></script>
 
 
 </body>
