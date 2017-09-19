@@ -1,0 +1,43 @@
+body {
+  background-image:url("../img/bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-wrapper {
+  background-color: #33302B;
+}
+
+#logo{
+  height: 60px;
+  padding-top: 10%;
+  padding-right: 3%;
+}
+
+.navbar a {
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+}
+
+.container {
+  padding-top: 10%;
+}
+
+/*.card-content {
+  border-top: 1px solid grey;
+  border-collapse: collapse;
+}*/
+
+.card-reveal > .card-title {
+  padding-bottom: 10%;
+}
+
+.card a {
+  font-family: 'Bitter', serif;
+}
+
+.card-title{
+  font-family: 'Lobster Two', cursive;
+}
